@@ -1,0 +1,52 @@
+{
+	"name": "pms",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"@babel/polyfill": "^7.0.0",
+		"@material-ui/core": "^3.1.0",
+		"@material-ui/icons": "^3.0.1",
+		"babel-polyfill": "^6.26.0",
+		"bootstrap": "^4.0.0-alpha.6",
+		"history": "^4.7.2",
+		"material-ui": "^0.20.2",
+		"material-ui-icons": "^1.0.0-beta.36",
+		"postcss-import": "^12.0.0",
+		"postcss-preset-env": "^6.0.2",
+		"react": "^16.5.2",
+		"react-bootstrap": "^0.32.1",
+		"react-dom": "^16.5.2",
+		"react-router-dom": "^4.3.1",
+		"webpack": "^4.19.1",
+		"webpack-cli": "^3.1.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.5",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-flow": "^6.23.0",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"css-loader": "^1.0.0",
+		"eslint": "^5.6.0",
+		"extract-text-webpack-plugin": "^4.0.0-beta.0",
+		"html-webpack-plugin": "^3.0.7",
+		"node-sass": "^4.9.3",
+		"postcss-loader": "^3.0.0",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.23.0",
+		"webpack-dev-server": "^3.1.8"
+	},
+	"scripts": {
+		"flow": "node_modules/.bin/flow",
+		"build": "webpack",
+		"build:dev": "npm run build -- --env.env=dev",
+		"serve:dev": "webpack-dev-server --env.env=dev --hot --mode development",
+		"build:prod": "npm run build -- -p --env.env=prod",
+		"serve:prod": "npm run build:prod && live-server ./public",
+		"start": "npm run serve:dev"
+	},
+	"author": "",
+	"license": "ISC"
+}

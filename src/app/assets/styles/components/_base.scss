@@ -1,0 +1,15 @@
+//@import './settings.scss';
+body {    
+    font-family: $font-family;
+    margin: 0;
+   // background:$background;
+}
+.wrapper {
+    box-shadow: -1px 1px 15px 1px #ccc;
+    margin-top:30px;
+    padding: 20px;
+}
+// .btn-login{
+//     margin: 10px auto 0 auto;
+//     display: block;
+// }
